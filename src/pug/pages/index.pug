@@ -1,0 +1,18 @@
+include ../includes/mixins
+
+- var pageType = 'content-home';
+//- Для pageType указать тип страницы. Варианты:
+	content-home - главная страница
+
+doctype html
+html(lang="ru-RU")
+	include ../includes/head
+	body
+		//- include ../blocks/menu
+
+		if pageType === 'content-home'
+			include ../blocks/header
+			include ../blocks/hero
+			include ../blocks/goods
+			include ../blocks/features
+			include ../blocks/footer

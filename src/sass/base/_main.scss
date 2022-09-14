@@ -1,0 +1,166 @@
+html {
+    font-size: 62.5%; // для html размер в пикселях, для body в ремах
+
+    // @media (max-width: $break_md) {
+    //     font-size: 50%;
+    // }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-width: 32rem;
+
+    font-family: $font-default;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-default;
+    line-height: 1.85;
+
+    /*Перенос длинных слов*/
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: unset;
+
+    &.toggle {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+
+
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 117rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(.1rem .1rem .1rem .1rem);
+    /* IE6, IE7 */
+    clip: rect(.1rem, .1rem, .1rem, .1rem);
+    padding: 0 !important;
+    border: 0 !important;
+    height: .1rem !important;
+    width: .1rem !important;
+    overflow: hidden;
+}
+
+section {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+
+    @media (max-width: $break_sm) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 4rem;
+
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.2;
+
+    text-align: center;
+
+    @media (max-width: $break_sm) {
+        margin-bottom: 2.4rem;
+        font-size: 2.6rem;
+    }
+}
+
+.section__subtitle {
+    margin-top: 0;
+    margin-bottom: .8rem;
+
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+    text-align: center;
+
+    @media (max-width: $break_sm) {
+        font-size: 1.6rem;
+    }
+}
+
+.section__wrapper {
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.dark {
+    background-color: #2e3031;
+    color: #fff;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    text-transform: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul:not([class]),
+ol:not([class]) {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+
+    li:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+}

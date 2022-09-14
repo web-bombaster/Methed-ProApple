@@ -1,0 +1,33 @@
+// @use "sass:math";
+
+// Шрифты
+$font-default: 'SF UI Display',
+Helvetica,
+Arial,
+Verdana,
+sans-serif;
+$font-size-default: 62.5%; // 10px / 16px
+
+// Цвета
+$color-green-light: #61A568;
+$color-default: #000;
+$color-blue-dark: #101D2C;
+$color-white: #F5F5F5;
+$color-grey: #AAAAAA;
+
+// Скругления
+$border-radius: 5rem;
+
+// Тени
+$shadow: (0 .4rem .4rem rgba(0, 0, 0, 0.1));
+
+// Медиа брейкпоинты
+
+$break_xxl: 1440px;
+$break_xl: 1200px;
+$break_md: 992px;
+$break_ssm: 800px;
+$break_sm: 768px;
+$break_xs: 480px;
+$break_xxs: 330px;
+

@@ -1,0 +1,43 @@
+// @use "sass:math";
+
+// Миксины
+@import "./mixins/mixins";
+
+// Переменные
+@import "./base/vars";
+
+// Шрифты
+@import "./base/fonts";
+// @import "./base/icomoonFont";
+
+// Нормализация
+@import './base/normalize';
+
+// Свои общие стили
+@import "./base/main";
+
+// Стандартности
+@import './base/utilities'; // Утилиты, вспомогательные классы
+// @import './base/animation'; // Анимации
+@import './base/_button'; // Кнопки
+
+// Блоки сайта
+@import "./blocks/header";
+@import "./blocks/country";
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/timer";
+@import "./blocks/goods";
+@import "./blocks/features";
+@import "./blocks/footer";
+
+
+// Библиотеки и их кастомизация
+// @import '_libs'; // Импортируем стили подключенных библиотек
+// @import './../libs/aos.css';
+// @import "../libs/magnific-popup/dist/magnific-popup.css";
+// @import '_custom-popup'; // Кастомизация стилей попапов
+// @import "../libs/slick-carousel/slick/slick.scss"; // slick
+// @import "../libs/slick-carousel/slick/slick-theme.scss"; // slick
+// @import '_custom-slick'; // Кастомизация стилей слайдера
+// @import "../libs/font-awesome-4.7.0/css/font-awesome.css";

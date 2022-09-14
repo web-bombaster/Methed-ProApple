@@ -1,0 +1,27 @@
+header#header.header
+	.wrapper.header__wrapper
+		a(href="#top").header__logo
+			img(src="img/logo.svg", alt="Логотип ProApple").header__logo-img
+
+		nav.header__nav.nav
+			ul.nav-list
+				li.nav-item
+					a(href="#goods").nav-link Продукты
+				li.nav-item
+					a(href="#features").nav-link Характеристики
+
+		.header__country.country
+			button.country__option
+				| Страна
+				svg(width="9", height="5", viewBox="0 0 9 5", fill="none", xmlns="http://www.w3.org/2000/svg")
+					path(d="M4.5 5L8.39711 0.5H0.602886L4.5 5Z", fill="black")
+
+			ul.country__list
+				li.country__item
+					button.country__btn Russia, RUB
+				li.country__item
+					button.country__btn USA, USD
+				li.country__item
+					button.country__btn Germany, EURO
+				li.country__item
+					button.country__btn Great Britain, GBP

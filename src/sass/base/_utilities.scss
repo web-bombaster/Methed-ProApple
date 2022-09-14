@@ -1,0 +1,25 @@
+.text-center {
+    text-align: center;
+}
+
+.mb40 {
+    margin-bottom: 4rem;
+}
+
+video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: #000;
+    width: auto;
+    max-height: 600px;
+
+    @media (max-width: $break_xs) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.video-box {
+    background-color: #000;
+}
