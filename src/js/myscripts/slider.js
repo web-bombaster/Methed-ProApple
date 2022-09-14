@@ -16,31 +16,25 @@ $('.bigslider').slick({
 });
 
 //Слайдер для кейсов
-$('.gallery').slick({
-	arrows: false,
-	rows: 2,
-	slidesPerRow: 4,
+$('.goods__box').slick({
+	arrows: true,
+	dots: false.valueOf,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	// rows: 2,
+	// slidesPerRow: 3,
 	adaptiveHeight: true,
 	responsive: [
 		{
 			breakpoint: 1024,
 			settings: {
-				slidesPerRow: 3,
-				autoplay: false
+				slidesToShow: 2,
 			}
 		},
 		{
-			breakpoint: 800,
+			breakpoint: 600,
 			settings: {
-				slidesPerRow: 2,
-				autoplay: false
-			}
-		},
-		{
-			breakpoint: 400,
-			settings: {
-				slidesPerRow: 1,
-				autoplay: false
+				slidesToShow: 1,
 			}
 		}
 		// You can unslick at a given breakpoint now by adding:
@@ -49,12 +43,12 @@ $('.gallery').slick({
 	]
 });
 
-$('.btn-next').on('click', function() {
-	$('.gallery').slick('slickNext');
-});
-$('.btn-prev').on('click', function() {
-	$('.gallery').slick('slickPrev');
-});
+// $('.btn-next').on('click', function() {
+// 	$('.gallery').slick('slickNext');
+// });
+// $('.btn-prev').on('click', function() {
+// 	$('.gallery').slick('slickPrev');
+// });
 
 //Слайдер видео
 // $('.portfolio-slider').slick({

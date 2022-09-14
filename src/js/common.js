@@ -1,9 +1,9 @@
 $(document).ready(function() {
+	// Инициализация слайдеров
+	// include './../js/myscripts/slider.js'
 	// Адаптивное меню
 	// -include './../js/myscripts/mymenu.js'
 	// -include './../js/myscripts/menu.js'
-	// Инициализация слайдеров
-	// -include './../js/myscripts/slider.js'
 	// Инициализация попапов
 	// -include './../js/myscripts/popup.js'
 	// Валидация и отправка форм

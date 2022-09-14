@@ -37,7 +37,7 @@
 // @import './../libs/aos.css';
 // @import "../libs/magnific-popup/dist/magnific-popup.css";
 // @import '_custom-popup'; // Кастомизация стилей попапов
-// @import "../libs/slick-carousel/slick/slick.scss"; // slick
-// @import "../libs/slick-carousel/slick/slick-theme.scss"; // slick
-// @import '_custom-slick'; // Кастомизация стилей слайдера
 // @import "../libs/font-awesome-4.7.0/css/font-awesome.css";
+@import "../libs/slick/slick.scss"; // slick
+// @import "../libs/slick/slick-theme.scss"; // slick
+@import './base/_custom-slick'; // Кастомизация стилей слайдера

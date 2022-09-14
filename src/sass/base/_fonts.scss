@@ -33,6 +33,16 @@
 @font-face {
     font-family: 'SF UI Display';
     src: local('SF UI Display'), local('SF-UI-Display'),
+        url('../fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: local('SF UI Display'), local('SF-UI-Display'),
         url('../fonts/SFUIDisplay-Medium.woff2') format('woff2'),
         url('../fonts/SFUIDisplay-Medium.woff') format('woff');
     font-weight: 500;
