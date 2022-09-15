@@ -75,11 +75,30 @@
     background-color: transparent;
     border: none;
 
+    transition: all .25s;
+    cursor: pointer;
+
     @media (max-width: $break_sm) {
         font-size: 1.4rem;
     }
 
+    &:hover {
+        color: #0017E5;
+        transform: translateY(-0.4rem);
+    }
+
+    &:active {
+        color: #8793FF;
+        transform: translateY(-0.2rem);
+    }
+
     svg {
+        display: inline-block;
+        margin-left: .8rem;
+    }
+
+    i {
+        font-size: 8px;
         display: inline-block;
         margin-left: .8rem;
     }
