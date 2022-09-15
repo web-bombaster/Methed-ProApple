@@ -1,0 +1,11 @@
+.modal(data-target="form-popup")
+    .modal__box
+        button.modal__close-btn.toggle
+        .modal__title Узнай все о новом iPhone&nbsp;14
+
+        form(action).form
+            input.form__input#name(placeholder="Ваше имя" type="text" name="name")
+            input.form__input#phone(placeholder="Телефон" type="tel" name="phone" required)
+            button.form__btn.btn(type="submit") Заказать консультацию
+
+.overlay

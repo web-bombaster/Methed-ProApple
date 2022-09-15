@@ -5,26 +5,6 @@ mixin goods__item(options)
 		.goods__info
 			.goods__title= options.title
 			.goods__price= options.price
-		button.goods__btn
+		button.goods__btn.sj-modal(data-path="form-popup")
 			| Узнать больше
 			i.icon-arrow-btn
-
-mixin column-item(options)
-	.column-item&attributes(attributes)
-		.column-img
-			img(src=options.src, alt=options.title)
-		.column-title= options.title
-		.column-descr= options.descr
-
-mixin getin-item(options)
-	.getin-item&attributes(attributes)
-		.getin-item__info
-			img(src=options.src, alt=options.title).getin-item__img
-			.getin-item__title= options.title
-		button.btn.getin-item__btn Приобрести
-		.getin-item__hidden bc1qar0srrr7xfkvy5l643ly74w9re59gtzzwf5mdq
-
-mixin footer-mony__item(options)
-	.footer-mony__item&attributes(attributes)
-		.footer-mony__title= options.title
-		.footer-mony__decr= options.descr

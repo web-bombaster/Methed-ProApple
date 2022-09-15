@@ -11,8 +11,6 @@
     <meta property="og:site_name" content="ProApple">
     <meta property="og:url" content="">
     <meta property="og:type" content="article">
-    <!-- base(href="https://lgbt-pain.com/")-->
-    <!-- link(rel="canonical", href="https://lgbt-pain.com/")-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="fonts/SFUIDisplay-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -57,16 +55,25 @@
           </button>
           <ul class="country__list">
             <li class="country__item">
+              <button class="country__btn">USA, USD</button>
+            </li>
+            <li class="country__item">
               <button class="country__btn">Russia, RUB</button>
             </li>
             <li class="country__item">
-              <button class="country__btn">USA, USD</button>
+              <button class="country__btn">Ukraine, UAH</button>
             </li>
             <li class="country__item">
               <button class="country__btn">Germany, EURO</button>
             </li>
             <li class="country__item">
               <button class="country__btn">Great Britain, GBP</button>
+            </li>
+            <li class="country__item">
+              <button class="country__btn">Australia, AUD</button>
+            </li>
+            <li class="country__item">
+              <button class="country__btn">Kazakhstan, KZT</button>
             </li>
           </ul>
         </div>
@@ -96,7 +103,7 @@
               <div class="goods__title">iPhone 14 PRO</div>
               <div class="goods__price">$1050</div>
             </div>
-            <button class="goods__btn">Узнать больше<i class="icon-arrow-btn"></i></button>
+            <button class="goods__btn sj-modal" data-path="form-popup">Узнать больше<i class="icon-arrow-btn"></i></button>
           </div>
           <div class="goods__item">
             <div class="goods__box-img"><img class="goods__img" src="img/goods/goods-02.jpg" alt="iPhone 14"/></div>
@@ -104,7 +111,7 @@
               <div class="goods__title">iPhone 14</div>
               <div class="goods__price">$799</div>
             </div>
-            <button class="goods__btn">Узнать больше<i class="icon-arrow-btn"></i></button>
+            <button class="goods__btn sj-modal" data-path="form-popup">Узнать больше<i class="icon-arrow-btn"></i></button>
           </div>
           <div class="goods__item">
             <div class="goods__box-img"><img class="goods__img" src="img/goods/goods-03.jpg" alt="AirPods Pro"/></div>
@@ -112,7 +119,7 @@
               <div class="goods__title">AirPods Pro</div>
               <div class="goods__price">$249</div>
             </div>
-            <button class="goods__btn">Узнать больше<i class="icon-arrow-btn"></i></button>
+            <button class="goods__btn sj-modal" data-path="form-popup">Узнать больше<i class="icon-arrow-btn"></i></button>
           </div>
           <div class="goods__item">
             <div class="goods__box-img"><img class="goods__img" src="img/goods/goods-04.jpg" alt="Apple Watch Ultra"/></div>
@@ -120,7 +127,7 @@
               <div class="goods__title">Apple Watch Ultra</div>
               <div class="goods__price">$799</div>
             </div>
-            <button class="goods__btn">Узнать больше<i class="icon-arrow-btn"></i></button>
+            <button class="goods__btn sj-modal" data-path="form-popup">Узнать больше<i class="icon-arrow-btn"></i></button>
           </div>
           <div class="goods__item">
             <div class="goods__box-img"><img class="goods__img" src="img/goods/goods-05.jpg" alt="Apple Watch Series 8"/></div>
@@ -128,7 +135,7 @@
               <div class="goods__title">Apple Watch Series 8</div>
               <div class="goods__price">$399</div>
             </div>
-            <button class="goods__btn">Узнать больше<i class="icon-arrow-btn"></i></button>
+            <button class="goods__btn sj-modal" data-path="form-popup">Узнать больше<i class="icon-arrow-btn"></i></button>
           </div>
         </div>
       </div>
@@ -172,5 +179,17 @@
         <div class="footer__copy">Copyright © 2022 ProApple</div>
       </div>
     </footer>
+    <div class="modal" data-target="form-popup">
+      <div class="modal__box">
+        <button class="modal__close-btn toggle"></button>
+        <div class="modal__title">Узнай все о новом iPhone&nbsp;14</div>
+        <form class="form" action>
+          <input class="form__input" id="name" placeholder="Ваше имя" type="text" name="name">
+          <input class="form__input" id="phone" placeholder="Телефон" type="tel" name="phone" required>
+          <button class="form__btn btn" type="submit">Заказать консультацию</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay"></div>
   </body>
 </html>
