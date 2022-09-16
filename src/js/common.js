@@ -9,24 +9,13 @@ $(document).ready(function() {
 	// плавная прокрутка на jq
 	// include './../js/myscripts/scroll.js'
 
-	// Адаптивное меню
-	// -include './../js/myscripts/mymenu.js'
-	// -include './../js/myscripts/menu.js'
-	// Инициализация попапов
-	// -include './../js/myscripts/popup.js'
-	// Валидация и отправка форм
-	// -include './../js/myscripts/forms.js'
-	// FAQ аккордион
-	// -include './../js/myscripts/accordeon.js'
-	// Анимация цифр
-	// -include './../js/myscripts/animate-number.js'
-	// Скролл по секциям
-	// -include './../js/myscripts/scroll-top.js'
-	// Прилипание меню
-	// -include './../js/myscripts/sticky.js'
-	// adaptive-table
-	// -include './../js/myscripts/adaptive-table.js'
+	// Выпадашка со странами
+	// include './../js/myscripts/country.js'
+
+	// Цены
+	// -include './../js/myscripts/price.js'
+
 });
-// -include './myscripts/preloader.js'
 
-
+// Инициализация кастомного скролла
+// include './../js/myscripts/simplebar-init.js'

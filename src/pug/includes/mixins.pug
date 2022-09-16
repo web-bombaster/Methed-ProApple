@@ -4,7 +4,7 @@ mixin goods__item(options)
 			img(src=options.src, alt=options.title).goods__img
 		.goods__info
 			.goods__title= options.title
-			.goods__price= options.price
+			.goods__price(data-price= options.price)= '$'+options.price
 		button.goods__btn.sj-modal(data-path="form-popup")
 			| Узнать больше
 			i.icon-arrow-btn
